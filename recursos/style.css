@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+}
+
+header {
+    background-color:white;
+    color:#6a0dad;
+    height: 1200px;
+    width:auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+
+
+.logo h1 {
+    display: inline;
+    font-size: 24px;
+    font-family: roboto;
+    font-style: roboto;
+}
+
+.logo p {
+    margin: 0;
+    font-size: 14px;
+}
+
+nav a, nav img  {
+    color:#6a0dad;
+    text-decoration: none;
+    margin-right: 15px;
+    margin: 0 10px;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #6a0dad;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    flex-wrap: wrap;
+}
+
+
+.contact a, .about a, .social-media, .about, .social-media a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    display: flex;
+    align-items:center;
+    margin: 0 10px;
+}
+
+
+.social-media img {
+    width: 50px;
+    height: 50px;
+}
