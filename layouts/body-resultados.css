@@ -1,0 +1,61 @@
+main {
+    padding: 20px;
+}
+
+.resultados {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.resultados h2 {
+    margin-top: 0;
+}
+
+.resultado-estado {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.resultado-estado img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.opciones {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.opcion {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 45%;
+}
+
+.opcion img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.acciones button {
+    background-color: #6a0dad;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}

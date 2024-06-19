@@ -1,0 +1,43 @@
+.footer {
+    background-color: #59009A;
+    color: #fff;
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contactamos,
+  .canales-atencion,
+  .social-media {
+    display: flex;
+    align-items: center;
+    margin-right: 1px;
+    flex-direction: column;
+  }
+  
+  .contactanos span,
+  .canales-atencion span,
+  .social-media span {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .imagenes-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .imagen-footer{
+    margin-right: 10px;
+  }
+  
+  .texto-footer {
+    text-align: right;
+    align-items: center;
+  }
