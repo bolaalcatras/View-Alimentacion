@@ -5,6 +5,10 @@ main {
     padding: 20px;
 }
 
+.card:hover{
+    transform:scale(1.1);
+    transition: 500ms;
+}
 .card {
     font-family: 'roboto', sans-serif;
     background-color: white;
@@ -22,3 +26,4 @@ main {
 .card p{
     margin: 10px;
 }
+

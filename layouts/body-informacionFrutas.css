@@ -3,9 +3,23 @@ input[type="search"] {
     border: black;
     border-radius: 0.5em;
     width: 20%;
+    margin-bottom: 30px;
 
 }
-
+.informacion{
+    display: flex;
+}
+.informacion div{
+    flex: 1;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.imagenesF{
+    height: 200px;
+    width: 200px;
+}
 main {
     display: flex;
     flex-wrap: wrap;
