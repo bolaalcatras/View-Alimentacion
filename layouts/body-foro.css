@@ -1,13 +1,16 @@
 
 .post {
     background-color: #fff;
-    padding: 15px;
+    padding: 20px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
+    left: 10%;
+    right: 10%;
 }
+
 .post p {
     margin: 0;
 }
@@ -19,10 +22,14 @@
     margin-right: 10px;
 }
 .post .view-button {
-    background-color: #7a6fa2;
+    background-color: #59009A;
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
     border-radius: 3px;
+}
+.view-button:hover{
+    transform:scale(1.1);
+    transition: 300ms;
 }
