@@ -7,57 +7,60 @@
     <link rel="stylesheet" href="../layouts/body-evaluacion.css">
     <link rel="stylesheet" href="../layouts/styleHeader.css">
     <link rel="stylesheet" href="../layouts/styleFooter.css">
-    <title>Evaluacion</title>
+    <title>Evaluación de Salud y Bienestar</title>
 </head>
+
 <header>
-        <nav class="navbar">
-            <div class="logo">
-                <img src="../inclued/logo.imagen.jpeg" alt="Logo de Alimentación">
-                <span>Alimentación</span>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../inclued/logo.imagen.jpeg" alt="Logo de Alimentación">
+            <span>Alimentación</span>
+        </div>
+        <div class="servicios">
+            <span>Servicios</span>
+            <div class="submenu">
+                <ul>
+                    <li>Biblioterapia</li>
+                    <li>Arteterapia</li>
+                    <li>Musicoterapia</li>
+                    <li>Ejercicios</li>
+                </ul>
             </div>
-            <div class="servicios">
-                <span>Servicios</span>
-                <div class="submenu">
-                    <ul>
-                        <li>Biblioterapia</li>
-                        <li>Arteterapia</li>
-                        <li>Musicoterapia</li>
-                        <li>Ejercicios</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="user-info">
-                <span>Juanito Alimaña</span>
-                <img class="imagen-usuario" src="../inclued/user.imgaen.jpeg" alt="Foto de perfil del usuario">
-            </div>
-        </nav>
+        </div>
+        <div class="user-info">
+            <span>Juanito Alimaña</span>
+            <img class="imagen-usuario" src="../inclued/user.imgaen.jpeg" alt="Foto de perfil del usuario">
+        </div>
+    </nav>
 </header>
+
 <body>
     <main>
         <section class="card" id="test">
-            <h2>Test</h2>
-            <p>Responde de 0 a 10 donde se indique y escriba donde se indique.</p>
+            <h2>Evaluación de Salud</h2>
+            <p>Responde de 0 a 10</p>
             <form>
-                <label for="estado-animico">Tu estado animico</label>
-                <input type="number" id="estado-animico" name="estado-animico" min="0" max="10" value="5">
+                <label for="estado-animico">Tu estado anímico</label>
+                <input type="number" id="estado-animico" name="estado-animico" min="0" max="10" value="5" aria-label="Estado Anímico">
                 
-                <label for="estado-animico">Calidad de sueño</label>
-                <input type="number" id="estado-animico" name="estado-animico" min="0" max="10" value="5">
+                <label for="calidad-sueno">Calidad de sueño</label>
+                <input type="number" id="calidad-sueno" name="calidad-sueno" min="0" max="10" value="5" aria-label="Calidad de Sueño">
                 
-                <label for="estado-animico">Estado fisico</label>
-                <input type="number" id="estado-animico" name="estado-animico" min="0" max="10" value="5">
+                <label for="estado-fisico">Estado físico</label>
+                <input type="number" id="estado-fisico" name="estado-fisico" min="0" max="10" value="5" aria-label="Estado Físico">
                 
-                <label for="estado-animico">Calidad alimenticia</label>
-                <input type="number" id="estado-animico" name="estado-animico" min="0" max="10" value="5">
+                <label for="calidad-alimenticia">Calidad alimenticia</label>
+                <input type="number" id="calidad-alimenticia" name="calidad-alimenticia" min="0" max="10" value="5" aria-label="Calidad Alimenticia">
 
-                <label for="estado-animico">¿Vas demasiado al medico?</label>
-                <input type="text" id="estado-animico" name="estado-animico" value="Si">
+                <label for="frecuencia-medico">¿Vas demasiado al médico?</label>
+                <input type="text" id="frecuencia-medico" name="frecuencia-medico" value="Si" placeholder="Escribe tu respuesta aquí" aria-label="Frecuencia de Visitas al Médico">
                 
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
 </body>
+
 <footer class="footer">
     <div class="footer-links">
         <div class="contactanos">
@@ -85,6 +88,5 @@
         <span>¿Quiénes somos?</span>
     </div>
 </footer>
-
 
 </html>
