@@ -24,3 +24,13 @@
     padding: 8px;
     text-align: left;
 }
+
+.columna {
+    width: 50%;
+  }
+  
+  @media (max-width: 600px) {
+    .columna {
+      width: 100%; /* En pantallas pequeñas, cada columna ocupa el 100% del ancho */
+    }
+  }

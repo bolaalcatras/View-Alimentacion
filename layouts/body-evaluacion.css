@@ -1,5 +1,17 @@
-main {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
     padding: 20px;
+}
+
+main {
+    
+    margin: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
 }
@@ -13,30 +25,83 @@ main {
     text-align: center;
 }
 
-.card h2 {
+h2 {
     margin-top: 0;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+
 }
 
-.card form {
-    display: flex;
+p{
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%; /* Asegura que el formulario ocupe todo el ancho de la tarjeta */
+    width: 100%; Asegura que el formulario ocupe todo el ancho de la tarjeta */
+
+    display: flex;
+    flex-direction: column;
 }
 
-.card form label,
+/* .card form label,
 .card form input {
     margin: 10px 0;
     width: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
+*/
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
-.card form button {
+input[type="number"] {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="number"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+card form button {
     background-color: #59009A;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    align-self: flex-end; /* Alinea el botón a la derecha */
-    margin-top: 20px; /* Añade un margen superior para separarlo del input */
+    align-self: flex-end; /*Alinea el botón a la derecha*/ 
+    margin-top: 20px; /*Añade un margen superior para separarlo del input  */
+
 }
+    /* button.submit-button {
+        background-color: #59009A;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        align-items: flex-end;
+        font-size: 16px;
+        margin-top: 20px;
+        transition: background-color 0.3s ease;
+    } */
+    
+    button.submit-button:hover {
+        background-color: #45a049;
+    }
