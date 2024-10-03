@@ -1,17 +1,9 @@
-/* main {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-} */
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f9f9f9;
     margin: 0;
     padding: 20px;
     color: #333;
@@ -22,7 +14,6 @@ main {
     margin: auto;
 }
 
-
 section {
     background-color: #fff;
     padding: 20px;
@@ -32,7 +23,7 @@ section {
     transition: transform 0.2s;
 }
 
-section:hover{
+section:hover {
     transform: scale(1.02);
 }
 
@@ -67,7 +58,8 @@ li:last-child {
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    
+    display: block; /* Cambia el botón a bloque */
+    margin: 20px auto; /* Centra el botón */
 }
 
 .add-button:hover {
@@ -82,13 +74,44 @@ em {
     color: #777;
 }
 
-.columna {
-    width: 50%;
+/* Estilos para el footer */
+.footer {
+    background-color: #59009A; /* Color de fondo morado */
+    padding: 20px; /* Añade un poco de padding */
+    width: 100%;
+    position: relative; 
+    color: white;
+}
+
+/* Estilos para el contenido del footer */
+.footer div {
+    margin: 10px 0; /* Añade margen entre las secciones */
+}
+
+/* Responsividad */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: row; /* Mantiene el diseño en fila */
+      justify-content: space-between; /* Distribuye el contenido */
+      flex-wrap: nowrap; /* Evita que el contenido se ajuste en columna */
   }
-  
-  @media (max-width: 600px) {
-    .columna {
-      width: 100%; /* En pantallas pequeñas, cada columna ocupa el 100% del ancho */
-    }
+
+  .footer-links, 
+  .canales-atencion, 
+  .social-media, 
+  .texto-footer {
+      flex: 1; /* Mantiene el mismo espacio para cada sección */
+      margin: 0 5px; /* Ajuste para mayor separación entre elementos */
   }
-  
+
+  .imagenes-container {
+    justify-content: space-between;
+}
+
+.imagen-footer {
+    width: 30px;
+    height: 30px;
+}
+
+    
+}

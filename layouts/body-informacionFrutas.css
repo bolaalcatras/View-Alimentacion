@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
     display: flex;
@@ -19,6 +18,7 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center; 
+    position: relative; /* Agregar esta línea */
 }
 
 .card {
@@ -31,7 +31,8 @@ main {
     width: 100%;
     overflow: hidden;
 }
-.image{
+
+.image {
     height: 300px;
     width: 300px;
     margin-left: auto;
@@ -64,4 +65,31 @@ main {
     margin: 5px 0;
     padding: 10px;
     border-radius: 5px;
+}
+
+/* Nuevas reglas para el footer */
+.footer {
+    background-color: purple; /* Color de fondo morado */
+    color: white; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centrar el texto */
+    flex-shrink: 0; /* Evitar que el footer se reduzca */
+    position: relative; /* Para que esté bien posicionado */
+}
+
+/* Asegurarte que en pantallas pequeñas el footer tenga fondo morado completo */
+@media (max-width: 768px) {
+    .footer {
+        width: 100%; /* Asegura que el footer use todo el ancho */
+        position: static; /* Colocarlo de manera que se mantenga al final del contenido */
+    }
+
+    .search {
+        position: absolute; /* Permitir que esté en la parte superior */
+        top: -40px; /* Ajustar según sea necesario para que no interfiera con el contenido */
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center; /* Centrar la barra de búsqueda */
+    }
 }

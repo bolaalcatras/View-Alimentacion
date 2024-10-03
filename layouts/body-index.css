@@ -5,10 +5,7 @@ main {
     padding: 20px;
 }
 
-.card:hover{
-    transform:scale(1.1);
-    transition: 500ms;
-}
+
 .card {
     font-family: 'roboto', sans-serif;
     background-color: white;
@@ -16,7 +13,14 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    transition: transform 500ms;
 }
+
+.card:hover,
+.card:active{
+    transform:scale(1.1);
+}
+
 
 .card img {
     width: 150px;
@@ -25,5 +29,15 @@ main {
 
 .card p{
     margin: 10px;
+}
+
+/* Estilos para pantallas menores a 600px */
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+    .card:active{
+        transform: scale(1.05);
+    }
 }
 

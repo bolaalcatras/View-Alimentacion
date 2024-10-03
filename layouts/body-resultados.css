@@ -1,33 +1,14 @@
-/* main {
-    padding: 20px;
-}
-
-.resultados {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.resultados h2 {
-    margin-top: 0;
-}
-
-.resultado-estado {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.resultado-estado img {
-    width: 100px;
-    margin-right: 20px;
-} */
 
 /* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  main{
+    padding: 20px;
   }
   
   /* Caja de resultados */
@@ -128,6 +109,9 @@ body {
     font-size: 1.1em;
     cursor: pointer;
     margin-top: 20px;
+    
+    margin-left: auto; /* Mueve el botón hacia la derecha */
+    margin-right: 0; /* Alineado completamente a la derecha */
 
   }
   
@@ -135,14 +119,63 @@ body {
     background-color: #be5cb6;
     transition: background-color 0.3s ease;
   }
-  
 
-  .columna {
-    width: 50%;
-  }
   
-  @media (max-width: 600px) {
-    .columna {
-      width: 100%; 
-    }
+/* Footer */
+.footer {
+  background-color: #59009A; /* Aseguramos que el color morado siempre cubra toda el área */
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  color: white;
+  border-top: 1px solid #d1e3f1;
+}
+
+.footer-links,
+.canales-atencion,
+.social-media,
+.texto-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-links .imagenes-container,
+.canales-atencion .imagenes-container,
+.social-media .imagenes-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imagen-footer {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 600px) {
+  .footer {
+      flex-direction: row; /* Mantiene el diseño en fila */
+      justify-content: space-between; /* Distribuye el contenido */
+      flex-wrap: nowrap; /* Evita que el contenido se ajuste en columna */
   }
+
+  .footer-links, 
+  .canales-atencion, 
+  .social-media, 
+  .texto-footer {
+      flex: 1; /* Mantiene el mismo espacio para cada sección */
+      margin: 0 5px; /* Ajuste para mayor separación entre elementos */
+  }
+
+  .imagenes-container {
+      justify-content: space-between;
+  }
+
+  .imagen-footer {
+      width: 30px;
+      height: 30px;
+  }
+}

@@ -1,3 +1,4 @@
+/* Estilos del Body */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
@@ -5,8 +6,8 @@ body {
     padding: 20px;
 }
 
+/* Estilos del Main */
 main {
-    
     margin: auto;
     background-color: white;
     padding: 20px;
@@ -30,29 +31,17 @@ h2 {
     color: #333;
     font-size: 24px;
     margin-bottom: 10px;
-
 }
 
-p{
+p {
     color: #333;
     margin-bottom: 20px;
 }
 
 form {
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%; Asegura que el formulario ocupe todo el ancho de la tarjeta */
-
     display: flex;
     flex-direction: column;
 }
-
-/* .card form label,
-.card form input {
-    margin: 10px 0;
-    width: 100%; /* Asegura que los elementos ocupen todo el ancho disponible */
-*/
 
 label {
     margin-bottom: 5px;
@@ -78,30 +67,78 @@ input::placeholder {
     color: #999;
 }
 
-card form button {
+button.submit-button {
     background-color: #59009A;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    align-self: flex-end; /*Alinea el botón a la derecha*/ 
-    margin-top: 20px; /*Añade un margen superior para separarlo del input  */
-
+    align-self: flex-end;
+    margin-top: 20px;
 }
-    /* button.submit-button {
-        background-color: #59009A;
-        color: white;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        align-items: flex-end;
-        font-size: 16px;
-        margin-top: 20px;
-        transition: background-color 0.3s ease;
-    } */
-    
-    button.submit-button:hover {
-        background-color: #45a049;
+
+button.submit-button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos del Footer */
+.footer {
+    background-color: #59009A;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.footer-links, .canales-atencion, .social-media, .texto-footer {
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+}
+
+.footer span {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.imagenes-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.imagen-footer {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Responsividad para dispositivos pequeños */
+@media (max-width: 600px) {
+    .footer {
+        flex-wrap: nowrap; /* Asegura que se mantenga en una fila */
+        flex-direction: row; /* Mantén la orientación horizontal */
+        justify-content: space-evenly; /* Mantener en filas y distribuir espacio */
     }
+
+    .footer-links, .canales-atencion, .social-media, .texto-footer {
+        flex: 1;
+        margin: 5px;
+    }
+
+    .imagen-footer {
+        width: 30px;
+        height: 30px;
+    }
+
+    .imagenes-container {
+        justify-content: space-between; /* Ajuste de espacio entre íconos en pantallas pequeñas */
+    }
+}
